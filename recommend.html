@@ -1,0 +1,379 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>机场推荐 · 15家精选优质机场横向评级榜 · 机场库</title><meta name="description" content="2026最新精选机场推荐榜单。基于晚高峰实测、全IPLC专线、流媒体4K解锁及稳定性筛选的15家高口碑机场方案，支持月付与官网直达。"/><meta name="keywords" content="机场推荐,稳定机场,高速机场,IPLC专线机场,性价比机场,4K流媒体机场"/><link rel="canonical" href="https://jichangku.net/recommend.html"/><meta name="geo.region" content="HK"/><meta name="geo.placename" content="Hong Kong"/><meta name="geo.position" content="22.3193;114.1694"/><meta name="ICBM" content="22.3193, 114.1694"/><meta property="og:type" content="article"/><meta property="og:title" content="机场推荐 · 15家精选优质机场横向评级榜 · 机场库"/><meta property="og:description" content="按稳定性、速度、解锁能力与价格筛选，15家精选优质机场实测推荐。"/><meta property="og:url" content="https://jichangku.net/recommend.html"/><link rel="stylesheet" href="styles.css"/><style>
+.card-bottom{display:flex;justify-content:space-between;align-items:center;font-size:11.5px;border-top:1px solid var(--line);padding-top:15px;margin-top:auto}
+.card-bottom-actions{display:flex;align-items:center;gap:12px}
+.card-bottom-actions a{font-weight:600}
+.btn-site-out{display:inline-flex;align-items:center;gap:4px;padding:5px 10px;border-radius:8px;background:var(--purple);color:#fff!important;font-size:10.5px;font-weight:600;transition:all .2s ease;text-decoration:none}
+.btn-site-out:hover{background:#5842e3;transform:translateX(2px)}
+.btn-review-link{color:var(--purple);font-size:11.5px;text-decoration:none}
+.btn-review-link:hover{text-decoration:underline}
+.rec-search-box{position:relative;max-width:680px;margin:25px 0 20px}
+.rec-search-input{width:100%;box-sizing:border-box;padding:14px 20px 14px 46px;border-radius:16px;border:1px solid rgba(75,92,118,0.12);background:var(--card);box-shadow:var(--shadow-small);color:var(--ink);font-size:14px;outline:none;transition:all .2s ease}
+.rec-search-input:focus{border-color:var(--purple);box-shadow:0 0 0 3px rgba(109,86,245,0.18)}
+.rec-search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);font-size:16px;color:var(--muted);pointer-events:none}
+.score-row{display:flex;align-items:center;justify-content:space-between;margin:18px 0 10px}
+.score{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px}
+.score span{font-size:11px;color:var(--muted);font-weight:400}
+.stars{color:#f5a623;font-size:12px;letter-spacing:1px}
+.stars span{color:#c5cedb}
+.metric-row{display:flex;justify-content:space-between;color:var(--muted);font-size:10.5px}
+.metric-row b{color:var(--ink);margin-left:4px}
+.progress{height:5px;background:#d8deea;border-radius:8px;margin:10px 0 18px;overflow:hidden}
+.progress i{height:100%;display:block;background:var(--purple);border-radius:8px}
+.progress.blue-progress i{background:var(--blue)}
+.progress.coral-progress i{background:var(--coral)}
+.progress.green-progress i{background:var(--green)}
+.airport-card{display:flex;flex-direction:column;min-height:360px}
+</style></head><body><div class="site-shell">
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span><strong>机场库</strong><small>Airport Library</small></span></a><nav class="main-nav"><a class="active" href="recommend.html">机场推荐</a><a href="reviews.html">机场评测</a><a href="compare.html">机场对比</a><a href="guides.html">使用教程</a><a href="ai-tools.html">AI工具</a><a href="deals.html">优惠专区</a><a href="alerts.html">避坑预警</a><a href="faq.html">机场FAQ</a><a href="about.html">关于我们</a></nav><button class="mobile-menu" aria-label="打开菜单"><span></span><span></span></button><a class="top-action" href="index.html#newsletter">订阅更新 <span>↗</span></a></header>
+<main><section class="page-hero section-pad"><div><span class="eyebrow">EDITOR'S PICK · 15 VERIFIED AIRPORTS</span><h1>机场推荐，<br/><em>从值得开始。</em></h1><p>按稳定性、速度、解锁能力与价格筛选，我们把长期使用更安心的 15 家主流机场放在这里。提供测评详情与直达官网的外部链接，每家均支持月付试水。</p></div><div class="page-hero-art"><span class="art-chip one">15 家主流严选</span><span class="art-chip two">官方外链直达</span><span class="art-chip three">实测评分排序</span></div></section>
+
+<section class="page-content section-pad">
+<div class="filter-row" id="recommendFilterTabs">
+  <button class="filter-pill active" data-type="all">全部推荐 (15)</button>
+  <button class="filter-pill" data-type="speed">高速线路</button>
+  <button class="filter-pill" data-type="value">高性价比</button>
+  <button class="filter-pill" data-type="media">流媒体解锁</button>
+  <button class="filter-pill" data-type="starter">新手友好</button>
+</div>
+
+<div class="rec-search-box">
+  <span class="rec-search-icon">🔍</span>
+  <input type="text" id="recSearchInput" class="rec-search-input" placeholder="搜索机场名称、特点或价格（如：速界、边缘节点、光年梯、极连云）..." />
+</div>
+
+<div style="font-size:12px;color:var(--muted);margin-bottom:20px;display:flex;justify-content:space-between">
+  <span>当前展示：<strong id="recCountDisplay" style="color:var(--purple)">15</strong> 家精选机场</span>
+  <span>支持直接查看评测或点击“进入官网 ↗”外部跳转</span>
+</div>
+
+<div class="page-grid" id="recommendGrid">
+
+<!-- 01 速界 -->
+<article class="airport-card featured-card" data-tags="all speed starter">
+  <div class="card-top"><span class="rank-badge">01</span><span class="soft-tag green-tag">综合最佳</span></div>
+  <div class="airport-icon icon-violet">速</div>
+  <h3>速界 · Speed World</h3>
+  <p class="muted">全 IPLC 专线调度台，晚高峰极度稳定不丢包</p>
+  <div class="score-row"><div class="score">4.8 <span>/ 5.0</span></div><div class="stars">★★★★★</div></div>
+  <div class="metric-row"><span>稳定性 <b>98%</b></span><span>平均延迟 <b>65ms</b></span></div>
+  <div class="progress"><i style="width:98%"></i></div>
+  <div class="card-bottom">
+    <span>¥15 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=speed">查看评测 →</a>
+      <a class="btn-site-out" href="https://lqy001.speedworldaff.com/#/register?code=p3EKNmlp" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 02 边缘节点 -->
+<article class="airport-card" data-tags="all speed media">
+  <div class="card-top"><span class="rank-badge">02</span><span class="soft-tag blue-tag">高速体验</span></div>
+  <div class="airport-icon icon-blue">边</div>
+  <h3>边缘节点 · EdgeNova</h3>
+  <p class="muted">边缘网络加速与全 IPLC 架构，跨境办公与海外调用</p>
+  <div class="score-row"><div class="score">4.7 <span>/ 5.0</span></div><div class="stars">★★★★★</div></div>
+  <div class="metric-row"><span>稳定性 <b>96%</b></span><span>平均延迟 <b>78ms</b></span></div>
+  <div class="progress blue-progress"><i style="width:96%"></i></div>
+  <div class="card-bottom">
+    <span>¥15 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=edge">查看评测 →</a>
+      <a class="btn-site-out" href="https://zoio.edgenovaaff.cc/#/register?code=ti8OUEN2" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 03 极连云 -->
+<article class="airport-card" data-tags="all value starter">
+  <div class="card-top"><span class="rank-badge">03</span><span class="soft-tag coral-tag">高性价比</span></div>
+  <div class="airport-icon icon-coral">极</div>
+  <h3>极连云 · Jilian Cloud</h3>
+  <p class="muted">多目标智能检测，大流量配额与稳定中转方案</p>
+  <div class="score-row"><div class="score">4.5 <span>/ 5.0</span></div><div class="stars">★★★★<span>★</span></div></div>
+  <div class="metric-row"><span>稳定性 <b>95%</b></span><span>平均延迟 <b>88ms</b></span></div>
+  <div class="progress coral-progress"><i style="width:95%"></i></div>
+  <div class="card-bottom">
+    <span>¥12 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=jilian">查看评测 →</a>
+      <a class="btn-site-out" href="https://liujie2002.jlyvipaff.com/#/?code=0MxRdXiu" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 04 快狸 -->
+<article class="airport-card" data-tags="all value starter">
+  <div class="card-top"><span class="rank-badge">04</span><span class="soft-tag green-tag">新手友好</span></div>
+  <div class="airport-icon icon-coral">狸</div>
+  <h3>快狸 · Kuaili</h3>
+  <p class="muted">多入口自动匹配，极简轻巧上手，移动端体验极佳</p>
+  <div class="score-row"><div class="score">4.4 <span>/ 5.0</span></div><div class="stars">★★★★<span>★</span></div></div>
+  <div class="metric-row"><span>稳定性 <b>94%</b></span><span>平均延迟 <b>92ms</b></span></div>
+  <div class="progress coral-progress"><i style="width:94%"></i></div>
+  <div class="card-bottom">
+    <span>¥10 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=kuaili">查看评测 →</a>
+      <a class="btn-site-out" href="https://yyo649929.kuailiaff.com/#/register?code=JVuUcHke" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 05 可信云 -->
+<article class="airport-card" data-tags="all speed media">
+  <div class="card-top"><span class="rank-badge">05</span><span class="soft-tag blue-tag">高稳定性</span></div>
+  <div class="airport-icon icon-blue">信</div>
+  <h3>可信云 · Kexin Cloud</h3>
+  <p class="muted">全 IEPL 专线与原生出口 IP，ChatGPT 与流媒体全解</p>
+  <div class="score-row"><div class="score">4.8 <span>/ 5.0</span></div><div class="stars">★★★★★</div></div>
+  <div class="metric-row"><span>稳定性 <b>98%</b></span><span>平均延迟 <b>66ms</b></span></div>
+  <div class="progress blue-progress"><i style="width:98%"></i></div>
+  <div class="card-bottom">
+    <span>¥15 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=kexin">查看评测 →</a>
+      <a class="btn-site-out" href="https://ermaozi01.kosingaff.com/#/register?code=FA6DjjDi" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 06 云图 -->
+<article class="airport-card" data-tags="all media">
+  <div class="card-top"><span class="rank-badge">06</span><span class="soft-tag blue-tag">流媒体解锁</span></div>
+  <div class="airport-icon icon-violet">图</div>
+  <h3>云图 · Yuntu</h3>
+  <p class="muted">全球多国家冷门节点覆盖，多语言友好，流媒体全绿</p>
+  <div class="score-row"><div class="score">4.5 <span>/ 5.0</span></div><div class="stars">★★★★<span>★</span></div></div>
+  <div class="metric-row"><span>稳定性 <b>95%</b></span><span>平均延迟 <b>89ms</b></span></div>
+  <div class="progress"><i style="width:95%"></i></div>
+  <div class="card-bottom">
+    <span>¥14 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=yuntu">查看评测 →</a>
+      <a class="btn-site-out" href="https://super.ytjcok.org/#/register?code=iKpNlXer" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 07 光年梯 -->
+<article class="airport-card" data-tags="all speed media">
+  <div class="card-top"><span class="rank-badge">07</span><span class="soft-tag green-tag">高速专线</span></div>
+  <div class="airport-icon icon-blue">光</div>
+  <h3>光年梯 · Guangnian</h3>
+  <p class="muted">专线大带宽，YouTube 4K/8K 缓冲秒开，画质党首选</p>
+  <div class="score-row"><div class="score">4.7 <span>/ 5.0</span></div><div class="stars">★★★★★</div></div>
+  <div class="metric-row"><span>稳定性 <b>97%</b></span><span>平均延迟 <b>70ms</b></span></div>
+  <div class="progress blue-progress"><i style="width:97%"></i></div>
+  <div class="card-bottom">
+    <span>¥16 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=guangnian">查看评测 →</a>
+      <a class="btn-site-out" href="http://liujie2002.gntaff.com/#/?code=NoPkovej" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 08 鲲鹏加速 -->
+<article class="airport-card" data-tags="all starter value">
+  <div class="card-top"><span class="rank-badge">08</span><span class="soft-tag coral-tag">快速开通</span></div>
+  <div class="airport-icon icon-blue">鲲</div>
+  <h3>鲲鹏加速 · Kun Peng</h3>
+  <p class="muted">极简开通流程与国际化支持，日常浏览轻度使用顺手</p>
+  <div class="score-row"><div class="score">4.4 <span>/ 5.0</span></div><div class="stars">★★★★<span>★</span></div></div>
+  <div class="metric-row"><span>稳定性 <b>94%</b></span><span>平均延迟 <b>95ms</b></span></div>
+  <div class="progress coral-progress"><i style="width:94%"></i></div>
+  <div class="card-bottom">
+    <span>¥13 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=kunpeng">查看评测 →</a>
+      <a class="btn-site-out" href="https://kunpengjiasu.com/#/register?code=99UgsawR" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 09 瞬云 -->
+<article class="airport-card" data-tags="all value starter">
+  <div class="card-top"><span class="rank-badge">09</span><span class="soft-tag coral-tag">轻巧试用</span></div>
+  <div class="airport-icon icon-violet">瞬</div>
+  <h3>瞬云 · ShunYun</h3>
+  <p class="muted">适合短周期轻量试用的入门服务，月付成本低</p>
+  <div class="score-row"><div class="score">4.3 <span>/ 5.0</span></div><div class="stars">★★★★<span>☆</span></div></div>
+  <div class="metric-row"><span>稳定性 <b>93%</b></span><span>平均延迟 <b>98ms</b></span></div>
+  <div class="progress"><i style="width:93%"></i></div>
+  <div class="card-bottom">
+    <span>¥12 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=shunyun">查看评测 →</a>
+      <a class="btn-site-out" href="https://ddd.jichang.best/#/?code=7idBwf3R" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 10 云界线 -->
+<article class="airport-card" data-tags="all speed media">
+  <div class="card-top"><span class="rank-badge">10</span><span class="soft-tag blue-tag">三网调度</span></div>
+  <div class="airport-icon icon-blue">界</div>
+  <h3>云界线 · Yunjiexian</h3>
+  <p class="muted">自动选优与智能回程，电信/联通/移动三网表现均衡</p>
+  <div class="score-row"><div class="score">4.6 <span>/ 5.0</span></div><div class="stars">★★★★<span>★</span></div></div>
+  <div class="metric-row"><span>稳定性 <b>96%</b></span><span>平均延迟 <b>79ms</b></span></div>
+  <div class="progress blue-progress"><i style="width:96%"></i></div>
+  <div class="card-bottom">
+    <span>¥15 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=yunjiexian">查看评测 →</a>
+      <a class="btn-site-out" href="https://youxia01.yunjiexianaff.com/#/?code=8ImGvubv" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 11 大佬云 -->
+<article class="airport-card" data-tags="all speed media">
+  <div class="card-top"><span class="rank-badge">11</span><span class="soft-tag green-tag">多端不限</span></div>
+  <div class="airport-icon icon-coral">佬</div>
+  <h3>大佬云 · Dalao Cloud</h3>
+  <p class="muted">全 IPLC/IEPL 专线，不限同时在线设备，家庭与工作室首选</p>
+  <div class="score-row"><div class="score">4.7 <span>/ 5.0</span></div><div class="stars">★★★★★</div></div>
+  <div class="metric-row"><span>稳定性 <b>97%</b></span><span>平均延迟 <b>72ms</b></span></div>
+  <div class="progress coral-progress"><i style="width:97%"></i></div>
+  <div class="card-bottom">
+    <span>¥19.9 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=dalao">查看评测 →</a>
+      <a class="btn-site-out" href="https://liu01.dalaoyunaff.com/#/?code=9A9fbKzz" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 12 环球梯 -->
+<article class="airport-card" data-tags="all speed media">
+  <div class="card-top"><span class="rank-badge">12</span><span class="soft-tag blue-tag">全球互联</span></div>
+  <div class="airport-icon icon-blue">环</div>
+  <h3>环球梯 · Huanqiu Ti</h3>
+  <p class="muted">全球分布式拓扑，多设备配额，UDP 与联机游戏支持佳</p>
+  <div class="score-row"><div class="score">4.6 <span>/ 5.0</span></div><div class="stars">★★★★<span>★</span></div></div>
+  <div class="metric-row"><span>稳定性 <b>96%</b></span><span>平均延迟 <b>80ms</b></span></div>
+  <div class="progress blue-progress"><i style="width:96%"></i></div>
+  <div class="card-bottom">
+    <span>¥22 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=huanqiu">查看评测 →</a>
+      <a class="btn-site-out" href="https://123pps01.huanqiutiaff.com/#/?code=iJzShI5m" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 13 闪电鼠 -->
+<article class="airport-card" data-tags="all value starter">
+  <div class="card-top"><span class="rank-badge">13</span><span class="soft-tag coral-tag">超值预算</span></div>
+  <div class="airport-icon icon-violet">闪</div>
+  <h3>闪电鼠 · Shandian Shu</h3>
+  <p class="muted">低月费门槛，连接敏捷，适合学生党与轻量备用</p>
+  <div class="score-row"><div class="score">4.2 <span>/ 5.0</span></div><div class="stars">★★★★<span>☆</span></div></div>
+  <div class="metric-row"><span>稳定性 <b>92%</b></span><span>平均延迟 <b>105ms</b></span></div>
+  <div class="progress"><i style="width:92%"></i></div>
+  <div class="card-bottom">
+    <span>¥9.9 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=shandian">查看评测 →</a>
+      <a class="btn-site-out" href="https://eothvip01.shandianshaff.com/#/?code=qNodU3f6" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 14 榴莲云 -->
+<article class="airport-card" data-tags="all value starter">
+  <div class="card-top"><span class="rank-badge">14</span><span class="soft-tag green-tag">厚道实在</span></div>
+  <div class="airport-icon icon-coral">榴</div>
+  <h3>榴莲云 · Liulian Cloud</h3>
+  <p class="muted">线路用料扎实，流量不虚标，工单响应及时的良心选</p>
+  <div class="score-row"><div class="score">4.4 <span>/ 5.0</span></div><div class="stars">★★★★<span>★</span></div></div>
+  <div class="metric-row"><span>稳定性 <b>94%</b></span><span>平均延迟 <b>93ms</b></span></div>
+  <div class="progress coral-progress"><i style="width:94%"></i></div>
+  <div class="card-bottom">
+    <span>¥12 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=liulian">查看评测 →</a>
+      <a class="btn-site-out" href="http://853vip01.liulianyunaff.com/#/?code=O6mS8K5N" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- 15 神行加速 -->
+<article class="airport-card" data-tags="all speed starter">
+  <div class="card-top"><span class="rank-badge">15</span><span class="soft-tag blue-tag">专线加速</span></div>
+  <div class="airport-icon icon-blue">神</div>
+  <h3>神行加速 · Shenxing</h3>
+  <p class="muted">针对跨境电商、外贸办公与国际视频通话优化，传输平稳</p>
+  <div class="score-row"><div class="score">4.5 <span>/ 5.0</span></div><div class="stars">★★★★<span>★</span></div></div>
+  <div class="metric-row"><span>稳定性 <b>95%</b></span><span>平均延迟 <b>86ms</b></span></div>
+  <div class="progress blue-progress"><i style="width:95%"></i></div>
+  <div class="card-bottom">
+    <span>¥14 / 月起</span>
+    <div class="card-bottom-actions">
+      <a class="btn-review-link" href="airport.html?id=shenxing">查看评测 →</a>
+      <a class="btn-site-out" href="https://fugui0077.shenxingaff.com/#/?code=z3ybkLVj" target="_blank" rel="noopener sponsored">进入官网 ↗</a>
+    </div>
+  </div>
+</article>
+
+</div>
+<div id="recEmptyNotice" style="display:none;text-align:center;padding:50px 20px;color:var(--muted)">未找到匹配的机场，换个关键词试试</div>
+
+</section></main>
+
+<footer class="footer section-pad"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span><strong>机场库</strong><small>Airport Library</small></span></a><p>把选择机场这件事，<br/>变得简单、透明、有依据。</p></div><div class="footer-links"><div><strong>探索</strong><a href="recommend.html">机场推荐</a><a href="reviews.html">机场评测</a><a href="compare.html">机场对比</a><a href="deals.html">优惠专区</a></div><div><strong>帮助</strong><a href="guides.html">使用教程</a><a href="faq.html">机场FAQ</a><a href="alerts.html">避坑预警</a><a href="ai-tools.html">AI工具</a></div><div><strong>关于</strong><a href="about.html">关于我们</a><a href="index.html#newsletter">订阅更新</a></div></div><div class="footer-bottom"><span>© 2025 机场库 Airport Library</span><span>独立测评 · 仅供参考</span></div></footer></div>
+
+<script src="script.js"></script>
+<script>
+// 推荐列表标签与搜索过滤系统
+(function(){
+  const filterBtns = document.querySelectorAll('#recommendFilterTabs .filter-pill');
+  const cards = document.querySelectorAll('#recommendGrid .airport-card');
+  const searchInput = document.getElementById('recSearchInput');
+  const countDisplay = document.getElementById('recCountDisplay');
+  const emptyNotice = document.getElementById('recEmptyNotice');
+
+  let currentType = 'all';
+  let searchQuery = '';
+
+  function applyFilter(){
+    let count = 0;
+    const q = searchQuery.trim().toLowerCase();
+
+    cards.forEach(card => {
+      const tags = (card.getAttribute('data-tags') || '').split(' ');
+      const text = card.textContent.toLowerCase();
+
+      const typeMatch = (currentType === 'all' || tags.includes(currentType));
+      const searchMatch = (!q || text.includes(q));
+
+      if(typeMatch && searchMatch){
+        card.style.display = '';
+        count++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if(countDisplay) countDisplay.textContent = count;
+    if(emptyNotice) emptyNotice.style.display = count === 0 ? 'block' : 'none';
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentType = btn.getAttribute('data-type');
+      applyFilter();
+    });
+  });
+
+  searchInput?.addEventListener('input', (e) => {
+    searchQuery = e.target.value;
+    applyFilter();
+  });
+})();
+</script>
+</body></html>
